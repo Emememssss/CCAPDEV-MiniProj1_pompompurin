@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+	--primary: #b71c1c;
+	--accent: #f8bbd0;
+	--text-primary: white;
+	--text-accent: black;
+	--text-subtle: rgb(32, 21, 21);
+	--text-link: #f05545;
+	--border-color: rgb(214, 214, 214)
+}
+
+body {
+	font-family: 'Lato',sans-serif;
+	background-color: rgb(246,246,246);
+}
+
+/* Navbar/Header */
+.header {
+	border: 1px solid rgb(214,214,214);
+	font-family: 'Lato',sans-serif; 
+	position: -webkit-sticky;
+	position:sticky;
+	top:0;
+	background-color: white;
+}
+
+/* for some reason this is not working if on the class header ".header" */
+/* head {
+	position: sticky;
+} */
+
+.header h1 {
+	/* background-color: blue; */
+	color: var(--primary);
+	text-align: center;
+}
+
+
+.header-title {
+}
+
+.header hr{
+	width: 35%;
+	background-color: var(--primary);
+	color: var(--primary)
+}
+
+/* Header Gallery Thumbnails */
+.header-thumbnails {
+	justify-content: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	justify-content:center;
+	flex-direction: row;
+	display: flex;
+}
+
+/* this is added by ems/custom */
+.header-item {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.header-item a {
+	text-decoration: none;
+}
+
+.header-item img {
+	border: 3px solid var(--primary);
+	border-radius: 20px;
+	width: 40px;
+	margin-top: 5px;
+	justify-content:center;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.header-item img:hover {
+	border: 3px solid var(--accent);
+}
+
+/* Header Gallery Numbers */
+.header-number {
+	color: var(--primary);
+	text-align:center
+}
+
+
+/* POST */
+.posts-container {
+
+}
+
+.post {
+	width: 418px;
+	background: white;
+	border: 1px solid rgb(214,214,214);
+	margin: 10px auto;
+}
+
+/* HEADER */
+.post-header {
+	padding: 20px;
+	background-color: var(--primary);
+}
+
+.post-title {
+	font-weight: 600;
+	color: var(--text-primary);
+}
+
+.post-date {
+	color: var(--text-primary);
+}
+
+/* CONTENT */
+.content-image {
+	width: 100%;
+}
+
+/* FOOTER */
+/* what is this? */
+.post-footer{
+	padding: 10px 20px;
+}
+
+
+.desc-title {
+	text-align: center;
+	background-color: var(--accent);
+	color: var(--text-accent);
+	font-weight: 600;
+	width: 380px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.desc-body {
+	color: var(--text-subtle);
+	text-align: justify;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+/* Footer Buttons */
+.footer-buttons {
+	width: 100%;
+}
+
+
+
+.footer-buttons ul {
+	padding-left: 20px;
+	padding-right: auto;
+	padding-bottom: auto;
+}
+
+.footer-buttons li {
+	/* display:inline ; */
+	display:inline-block;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+#like {
+	background-image: url(images/spritesheet.png);
+	background-size: 72px 24px;
+	background-position: 0px 0px;
+	width: 24px;
+	height: 24px;
+}
+
+#like:hover {
+	opacity:50%;
+}
+
+#comment {
+	background-image: url(images/spritesheet.png);
+	background-size: 72px 24px;
+	background-position: -24px 0px;
+	width: 24px;
+	height: 24px;
+}
+
+#comment:hover{
+	opacity:50%;
+}
+
+#save {
+	background-image: url(images/spritesheet.png);
+	background-size: 72px 24px;
+	background-position: -48px 0px;
+	width: 24px;
+	height: 24px;
+}
+
+#save:hover{
+	opacity:50%;
+}
+/* Text-level selectors */
+/* Website link */
+a[href^="http"] {
+	text-decoration: underline;
+	color: var(--text-link);
+}
+
+/* additional by ems */
